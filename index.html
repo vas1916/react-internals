@@ -8,16 +8,18 @@
   </head>
   <body>
     <div><h1>Hello World using plain HTML!</h1></div>
-    <div id="root">
+    <div id="jsroot">
       <!--
         BELOW: creating HTML element using java script.
         -->
-      <!-- <script>
+      <script>
         const heading = document.createElement("h2");
         heading.innerHTML = "Hello World using JS!";
-        const root = document.getElementById("root");
+        const root = document.getElementById("jsroot");
         root.appendChild(heading);
-      </script> -->
+      </script>
+    </div>
+    <div id="root">
       <!--
         BELOW: Embedded react cdn's to get all the react functionalities / powers into this file
       -->
@@ -35,6 +37,14 @@
       <script src="./App.js">
         //Moved all the JS code to App.js file to make it more modular/readable.
       </script>
+    </div>
+    <div id="nestedroot">
+      <script src="./NestedElements.js">
+        // created Nested DOM using react .
+      </script>
+    </div>
+    <div id="nestedRootWithChild">
+      <script src="./NestedSiblingElements.js"></script>
     </div>
   </body>
 </html>
