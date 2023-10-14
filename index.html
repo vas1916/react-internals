@@ -4,49 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
-    <title>Howdy React</title>
+    <title>Howdy React by Sreeni</title>
   </head>
   <body>
-    <div><h1>Hello World using plain HTML!</h1></div>
-    <div id="jsroot">
-      <!--
-        BELOW: creating HTML element using java script.
-        -->
-      <script>
-        const heading = document.createElement("h2");
-        heading.innerHTML = "Hello World using JS!";
-        const root = document.getElementById("jsroot");
-        root.appendChild(heading);
-      </script>
-    </div>
     <div id="root">
-      <!--
-        BELOW: Embedded react cdn's to get all the react functionalities / powers into this file
-      -->
-      <!-- <script
-        crossorigin
-        src="https://unpkg.com/react@18/umd/react.development.js"
-      ></script>
-      <script
-        crossorigin
-        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      ></script> -->
-      <!--
-        BELOW: Creating Element using React is below
-      -->
       <script src="./App.js" type="module">
         //Moved all the JS code to App.js file to make it more modular/readable.
       </script>
     </div>
-    <div id="nestedroot">
-      <script src="./NestedElements.js" type="module">
-        // created Nested DOM using react .
-      </script>
-    </div>
   </body>
-  <div id="nestedRootWithChild">
-    <script src="./NestedSiblingElements.js" type="module">
-      // created Nested DOM with siblings using react .
-    </script>
-  </div>
 </html>
