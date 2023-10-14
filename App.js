@@ -8,7 +8,17 @@ const jsxheader = <h1 id="jsxheading">Howdy React using JSX</h1>;
 
 // React Functional Component
 const HeaderComponent = () => {
-  return <h2>React Functional Component</h2>;
+  return <h1>React Functional Component</h1>;
+};
+
+//Component Composition
+const ComponentComposition = () => {
+  return (
+    <div>
+      <HeaderComponent />
+      <h1>Component Composition is inheriting another component</h1>
+    </div>
+  );
 };
 
 const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
@@ -17,4 +27,4 @@ const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
 //reactRoot.render(jsxheader);
 
 //render functional component
-reactRoot.render(<HeaderComponent />);
+reactRoot.render(<ComponentComposition />);
