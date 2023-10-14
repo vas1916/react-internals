@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Howdy React</title>
   </head>
   <body>
     <div><h1>Hello World using plain HTML!</h1></div>
     <div id="root">
-      <script>
+      <!--
+        BELOW: creating HTML element using java script.
+        -->
+      <!-- <script>
         const heading = document.createElement("h2");
         heading.innerHTML = "Hello World using JS!";
         const root = document.getElementById("root");
         root.appendChild(heading);
-      </script>
+      </script> -->
       <!--
-        Embedded react cdn's to get all the react powers into this file
+        BELOW: Embedded react cdn's to get all the react functionalities / powers into this file
       -->
       <script
         crossorigin
@@ -25,6 +28,21 @@
         crossorigin
         src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
       ></script>
+      <!--
+        BELOW: Creating Element using React is below
+      -->
+      <script>
+        //creating h3 element using react
+        const reactHeading = React.createElement(
+          "h3",
+          {},
+          "Hello World using React!"
+        );
+        //creating react root
+        const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
+        //rendering rect element inside react root
+        reactRoot.render(reactHeading);
+      </script>
     </div>
   </body>
 </html>
