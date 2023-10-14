@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom";
 /*
  * Create below DOM using react
  * <div id="parent">
@@ -14,7 +16,7 @@ const parent = React.createElement(
   React.createElement(
     "div",
     { id: "child" },
-    React.createElement("h4", {}, "Nested React structure heading4")
+    React.createElement("h4", {}, "Nested React structure head4")
   )
 );
 const reactNestedRoot = ReactDOM.createRoot(

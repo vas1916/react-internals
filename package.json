@@ -1,0 +1,27 @@
+{
+  "name": "react-internals",
+  "version": "1.0.0",
+  "description": "This is Howdy React app by Sreeni",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vas1916/react-internals.git"
+  },
+  "keywords": [],
+  "author": "SreenivasaReddy HR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vas1916/react-internals/issues"
+  },
+  "homepage": "https://github.com/vas1916/react-internals#readme",
+  "devDependencies": {
+    "parcel": "^2.10.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

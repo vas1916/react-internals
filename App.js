@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom";
 //creating h3 element using react
 const reactHeading = React.createElement(
   "h3",
@@ -5,7 +7,7 @@ const reactHeading = React.createElement(
   "Hello World using React!"
 );
 
-console.log("@reactHeading is react object not <h3> element", reactHeading);
+console.log("@reactHeading is react objectnot <h3> element", reactHeading);
 
 //creating react root
 const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
