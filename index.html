@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Howdy React</title>
   </head>
   <body>
@@ -31,17 +32,8 @@
       <!--
         BELOW: Creating Element using React is below
       -->
-      <script>
-        //creating h3 element using react
-        const reactHeading = React.createElement(
-          "h3",
-          {},
-          "Hello World using React!"
-        );
-        //creating react root
-        const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
-        //rendering rect element inside react root
-        reactRoot.render(reactHeading);
+      <script src="./App.js">
+        //Moved all the JS code to App.js file to make it more modular/readable.
       </script>
     </div>
   </body>
